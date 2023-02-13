@@ -1,0 +1,53 @@
+$wh:30%;
+$mwh:20%;
+$swh:10%;
+@mixin circle($width, $height, $bac_color) {
+  width: $width;
+  height: $height;
+  background-color: $bac_color;
+  border-radius: 50%;
+}
+%flex_box {
+  width: $wh;
+  height: $wh;
+  margin: auto;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body{
+  width: 600px;
+  height: 600px;
+
+}
+.box-1 {
+  @extend %flex_box;
+  &__two,&__three{
+    @include circle($swh,$swh,red);
+  }
+  &__one{
+    @include circle($mwh,$mwh,rgb(75, 247, 40));
+
+  }
+}
+.box-2 {
+  @extend %flex_box;
+  &__one,&__two{
+    @include circle($wh,$wh,gray);
+  }
+  &__three {
+    @include circle($mwh,$mwh,rgb(220, 52, 147));
+
+  }
+}
+.box-3 {
+  @extend %flex_box;
+  &__one,&__three{
+    @include circle($wh,$wh, #1e0979);
+  }
+  &__two{
+    @include circle($swh,$swh, #23b8c8);
+
+  }
+}

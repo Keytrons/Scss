@@ -1,0 +1,30 @@
+$bodyfontColor: rgb(227, 248, 70);
+$textColor: rgb(94, 70, 248);
+$fontSize:  30px;
+$fontFamily: 'Times New Roman', Times, serif;
+$onefontFamily : fantasy ;
+$wtext:300px;
+$popupColor: rgb(85, 244, 244);
+
+body {
+    font-family: $onefontFamily;
+    width: auto;
+    height: 700px;
+    background-color: $bodyfontColor;
+}
+.popup {
+    width: auto;
+    height: auto;
+    background-color: $popupColor;
+    &__title , &__button {
+        font-size: $fontSize;
+        font-family: $fontFamily;
+        color: $textColor;
+    }
+    &__text {
+        font-size: $wtext;
+    }
+    &__button {
+        background-color:$bodyfontColor ;
+    }
+    }

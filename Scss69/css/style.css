@@ -1,0 +1,23 @@
+body {
+  font-family: fantasy;
+  width: auto;
+  height: 700px;
+  background-color: rgb(227, 248, 70);
+}
+
+.popup {
+  width: auto;
+  height: auto;
+  background-color: rgb(85, 244, 244);
+}
+.popup__title, .popup__button {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(94, 70, 248);
+}
+.popup__text {
+  font-size: 300px;
+}
+.popup__button {
+  background-color: rgb(227, 248, 70);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+main{
+    background-color: rgb(177, 249, 230);
+}
+h2{
+    color: rgb(51, 0, 255);
+    font-size: 30px;
+    font-style:inherit;
+    text-align: center;
+}
+p{
+    font-style:italic;
+
+    text-decoration:underline;
+  }
+ul {
+    list-style-type:square;
+    li{
+        font-size: 10px;
+        color: darkgreen;
+    }    
+}
